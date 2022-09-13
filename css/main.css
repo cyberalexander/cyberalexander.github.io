@@ -4,11 +4,11 @@ body {
     background-color: #eee;
 }
 .wrapper {
-    #display: block;
+    display: block;
     width: 100%;
     padding: 0;
     margin: 0 auto;
 }
-/*.outer-container {*/
-/*    background-image: url('../img/main_photo.jpeg');*/
-/*}*/
+.outer-container {
+    background: url('../img/main_photo.jpeg') no-repeat;
+}
