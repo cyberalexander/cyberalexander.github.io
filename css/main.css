@@ -1,23 +1,123 @@
+@charset "utf-8";
+/*https://fonts.google.com/specimen/JetBrains+Mono*/
 @font-face {
     font-family: 'jetbrains_monoregular', sans-serif;
     src: url('../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('ttf');
-    font-weight:400;
-    font-style:normal;
-    font-display:swap
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
 }
+
 body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #eee;
     font-family: 'jetbrains_monoregular', sans-serif !important;
-    color: #000!important;
+    color: #000 !important;
 }
-.wrapper {
-    display: block;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'jetbrains_monoregular', sans-serif;
 }
-.outer-container {
-    #background: url('../img/main_photo.jpeg') no-repeat;
+
+#intro {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     width: 100%;
-    padding: 0;
-    margin: 0 auto;
+    height: 88vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+#intro h1.text-hero {
+    font-size: 400px !important;
+    margin-bottom: -20pt;
+    margin-top: -100pt;
+}
+
+#intro h3 {
+    font-size: 1.83rem !important;
+    line-height: 1.4;
+}
+
+/* breakpoints */
+@media only screen and (max-width: 1440px) {
+    #intro h1.text-hero {
+        font-size: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #intro h1.text-hero {
+        font-size: 310px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #awwwards {
+        display: none;
+    }
+
+    .hover-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 80%;
+    }
+
+    h1.large {
+        font-size: 52pt;
+    }
+
+    .content--alternate .content__item {
+        margin: 0 auto;
+    }
+
+    .logo {
+        left: 50px;
+    }
+
+    .hamburger {
+        right: 50px !important;
+    }
+
+    .pad-mobile {
+        margin-bottom: 20vh !important;
+    }
+
+    .content__item {
+        margin-bottom: 0vh;
+    }
+
+    .content__item-imgwrap-medium {
+        height: 40px !important;
+    }
+
+    .pad-top {
+        top: 170px
+    }
+
+    #intro h1.text-hero {
+        font-size: 250px !important;
+        margin-top: -50pt;
+    }
+
+    #intro h3 {
+        font-size: 1.75rem !important
+    }
 }
