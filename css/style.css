@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {font-family: 'jetbrains_monoregular', sans-serif;}
     align-items: center
 }
 
-#intro h1.text-hero {font-size: 400px !important; margin-bottom: -20pt; margin-top: -100pt;}
+#intro h1.text-hero {font-size: 30vw !important; margin-bottom: -20pt; margin-top: -100pt;}
 #intro h3 {font-size: 1.83rem !important; line-height: 1.4;}
 
 /*
@@ -48,13 +48,13 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
 @media only screen and (max-width: 1440px) {
     #intro h1.text-hero {
-        font-size: 350px !important;
+        font-size: 25vw !important;
     }
 }
 
 @media only screen and (max-width: 1280px) {
     #intro h1.text-hero {
-        font-size: 310px !important;
+        font-size: 22vw !important;
     }
 }
 
@@ -68,7 +68,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content__item { margin-bottom: 0vh; }
     .content__item-imgwrap-medium { height: 40px !important;}
     .pad-top { top: 170px }
-    #intro h1.text-hero{font-size:250px!important;margin-top:-50pt;}
+    #intro h1.text-hero{font-size:20vw!important;margin-top:-50pt;}
     #intro h3 {font-size:1.75rem!important}
 }
 
@@ -85,7 +85,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content--alternate .content__item { max-width: 100vw; }
     .pad-mobile { margin-bottom: 10vh !important; }
     .gallery { margin-top: -10em !important; }
-    #intro h1.text-hero{font-size:220px!important;}
+    #intro h1.text-hero{font-size:17vw!important;}
     .content__item-imgwrap-portrait {height: 420px !important;}
 }
 
@@ -116,11 +116,11 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .p-b-card { margin-top: 0 !important; }
     .pad-mobile-md { margin-bottom: 6vh !important; }
     .download-cv { margin-bottom: 2em; }
-    #intro h1.text-hero{font-size:120px!important;margin-bottom:0pt;margin-top:0pt;}
+    #intro h1.text-hero{font-size:15vw!important;margin-bottom:0pt;margin-top:0pt;}
 }
 
 @media only screen and (max-width: 360px) {
-    #intro h1.text-hero{font-size:80px!important;}
+    #intro h1.text-hero{font-size:10vw!important;}
 }
 
 /* Animation section ------------------------------------------------------------------------------------------------ */
