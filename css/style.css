@@ -1,8 +1,8 @@
 @charset "utf-8";
-/*https://fonts.google.com/specimen/JetBrains+Mono*/
+/*https://www.jetbrains.com/lp/mono/*/
 @font-face {
-    font-family: 'jetbrains_monoregular', sans-serif;
-    src: url('../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf') format('ttf');
+    font-family: jetbrains_monoregular, sans-serif;
+    src: url('../fonts/jetbrains_mono/JetBrainsMono-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap
@@ -12,11 +12,11 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #fefdff;
-    font-family: 'jetbrains_monoregular', sans-serif !important;
+    font-family: jetbrains_monoregular, sans-serif !important;
     color: #000 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family: 'jetbrains_monoregular', sans-serif;}
+h1, h2, h3, h4, h5, h6 {font-family: jetbrains_monoregular, sans-serif !important;}
 
 #intro {
     display: -webkit-box;
@@ -39,9 +39,10 @@ h1, h2, h3, h4, h5, h6 {font-family: 'jetbrains_monoregular', sans-serif;}
     -ms-flex-align: center;
     align-items: center
 }
-
 #intro h1.text-hero {font-size: 30vw !important; margin-bottom: -20pt; margin-top: -100pt;}
 #intro h3 {font-size: 1.83rem !important; line-height: 1.4;}
+#contact{margin-top:0}
+.line:before {content: "— ";}
 
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
