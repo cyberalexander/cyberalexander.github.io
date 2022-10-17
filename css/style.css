@@ -48,7 +48,8 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #contact{margin-top:0}
 .line:before {content: "— ";}
 #primary{background-color:#000; color:#fff; margin-top:4em; margin-bottom:4em; padding-top:4em; padding-bottom:4em}
-.content {grid-area: grid;margin: 10vh 0 0 0;background-color: #000;outline: 0;}
+.content {grid-area: grid; margin: 10vh 0 0 0; background-color: #000; outline: 0;}
+.content-full {width: 100vw;justify-self: center;}
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
@@ -68,11 +69,11 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #awwwards { display: none; }
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
-    .content--alternate .content__item { margin: 0 auto;}
+    .content-alternate .content-item { margin: 0 auto;}
     .logo { left: 50px; } .hamburger { right: 50px !important; }
     .pad-mobile { margin-bottom: 20vh !important; }
-    .content__item { margin-bottom: 0vh; }
-    .content__item-imgwrap-medium { height: 40px !important;}
+    .content-item { margin-bottom: 0vh; }
+    .content-item-img-wrap-medium { height: 40px !important;}
     .pad-top { top: 170px }
     #intro h1.text-hero{font-size:20vw!important;margin-top:-50pt;}
     #intro h3 {font-size:1.75rem!important}
@@ -88,11 +89,11 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content__item-title { font-size: 36pt !important; padding: 0 1vh !important; }
     .hamburger-box { top: 35px !important; }
     .logo { top: 29px !important; }
-    .content--alternate .content__item { max-width: 100vw; }
+    .content-alternate .content-item { max-width: 100vw; }
     .pad-mobile { margin-bottom: 10vh !important; }
     .gallery { margin-top: -10em !important; }
     #intro h1.text-hero{font-size:17vw!important;}
-    .content__item-imgwrap-portrait {height: 420px !important;}
+    .content-item-img-wrap-portrait {height: 420px !important;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -111,13 +112,13 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content__item-pad { padding: 6rem 0 0 0 !important; }
     .content__item-title { margin: calc(60pt * -9/2) 0 0 0; }
     .title-adj { margin: calc(60pt * -1/2) 0 0 0 !important; }
-    .content__item-imgwrap-medium { height: 200px !important; }
+    .content-item-img-wrap-medium { height: 200px !important; }
     ion-icon { font-size: 18px !important; }
     .p-t-xs { padding-top: 1em; } .p-t-md { padding-top: 3em; }
     .pad-mobile { margin-bottom: 12vh !important; }
     .meta-container { margin: 20px 10px 20px 0 !important; }
-    .content__item-imgwrap-portrait { margin-bottom: 1.5em !important; }
-    .content__item--expand .content__item-description, .content__item--expand:nth-child(2n) .content__item-description, .content__item--wide .content__item-description, .content__item--wide:nth-child(2n) .content__item-description { padding: 4em 0 !important; }
+    .content-item-img-wrap-portrait { margin-bottom: 1.5em !important; }
+    .content__item--expand .content__item-description, .content__item--expand:nth-child(2n) .content__item-description, .content-item-wide .content__item-description, .content-item-wide:nth-child(2n) .content__item-description { padding: 4em 0 !important; }
     .p-t-about { top: 170px }
     .p-b-card { margin-top: 0 !important; }
     .pad-mobile-md { margin-bottom: 6vh !important; }
