@@ -1,7 +1,12 @@
 @charset "utf-8";
 /*
+Notes:
 Font source: https://www.jetbrains.com/lp/mono/
 More about @font-face https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face
+
+em - relative unit, depending on the letter 'M' size of the current font.
+vw - 1vw = 1/100 of the browser window width
+:nth-child(even) - belongs to the even elements in current container
 */
 @font-face {
     font-family: "JetBrains Mono";
@@ -47,9 +52,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #intro h3 {font-size: 1.83rem !important; line-height: 1.4;}
 #contact{margin-top:0}
 .line:before {content: "— ";}
-#primary{background-color:#000; color:#fff; margin-top:4em; margin-bottom:4em; padding-top:4em; padding-bottom:4em}
-.content {grid-area: grid; margin: 10vh 0 0 0; background-color: #000; outline: 0;}
-.content-full {width: 100vw;justify-self: center;}
+
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
@@ -152,3 +155,11 @@ span.wave {
     50% {transform: rotate(0)}
     100% {transform: rotate(0)}
 }
+
+/* 'primary' container styles BEGIN */
+#primary {background-color:#000; color:#fff; margin-top:4em; margin-bottom:4em; padding-top:4em; padding-bottom:4em}
+.content-item-topic {opacity: 0.1; font-size: 12vw; position: absolute; top: -7vw; right: -8vw; line-height: 1;}
+.content-item:nth-child(even) .content-item-topic {right: auto; left: -7vw;}
+/* 'primary' container styles END */
+
+
