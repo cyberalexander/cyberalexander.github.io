@@ -6,7 +6,10 @@ More about @font-face https://developer.mozilla.org/en-US/docs/Web/CSS/@font-fac
 
 em - relative unit, depending on the letter 'M' size of the current font.
 vw - 1vw = 1/100 of the browser window width
+vh - 1vh = 1/100 of the browser window height
 :nth-child(even) - belongs to the even elements in current container
+outline - a line drawn outside the element's border
+justify-self - property sets the way a box is justified inside its alignment container along the appropriate axis
 */
 @font-face {
     font-family: "JetBrains Mono";
@@ -48,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
     -ms-flex-align: center;
     align-items: center
 }
-#intro h1.text-hero {font-size: 30vw !important; margin-bottom: -20pt; margin-top: -100pt;}
-#intro h3 {font-size: 1.83rem !important; line-height: 1.4;}
+#intro h1.text-hero {font-size: 350px !important; margin-bottom: -20pt; margin-top: -100pt}
+#intro h3 {font-size: 1.83rem !important; line-height: 1.4}
 #contact{margin-top:0}
 .line:before {content: "— ";}
 
@@ -72,7 +75,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #awwwards { display: none; }
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
-    .content-alternate .content-item { margin: 0 auto;}
+    .content-alternate .content-item {margin: 0 auto}
     .logo { left: 50px; } .hamburger { right: 50px !important; }
     .pad-mobile { margin-bottom: 20vh !important; }
     .content-item { margin-bottom: 0vh; }
@@ -92,7 +95,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content__item-title { font-size: 36pt !important; padding: 0 1vh !important; }
     .hamburger-box { top: 35px !important; }
     .logo { top: 29px !important; }
-    .content-alternate .content-item { max-width: 100vw; }
+    .content-alternate .content-item {max-width: 100vw}
     .pad-mobile { margin-bottom: 10vh !important; }
     .gallery { margin-top: -10em !important; }
     #intro h1.text-hero{font-size:17vw!important;}
@@ -158,8 +161,14 @@ span.wave {
 
 /* 'primary' container styles BEGIN */
 #primary {background-color:#000; color:#fff; margin-top:4em; margin-bottom:4em; padding-top:4em; padding-bottom:4em}
-.content-item-topic {opacity: 0.1; font-size: 12vw; position: absolute; top: -7vw; right: -8vw; line-height: 1;}
-.content-item:nth-child(even) .content-item-topic {right: auto; left: -7vw;}
+
+.content {margin: 10vh 0 0 0; background-color: #000; outline: 0}
+.content-full {width: 100vw; justify-self: center}
+.content-alternate .content-item {max-width: 90vw}
+.content-alternate .content-item:nth-child(even) {margin-left: auto}
+
+.content-item-topic {opacity: 0.1; font-size: 12vw; position: absolute; top: -7vw; right: -8vw; line-height: 1}
+.content-item:nth-child(even) .content-item-topic {right: auto; left: -7vw}
 /* 'primary' container styles END */
 
 
