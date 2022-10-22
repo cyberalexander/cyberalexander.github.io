@@ -10,6 +10,12 @@ vh - 1vh = 1/100 of the browser window height
 :nth-child(even) - belongs to the even elements in current container
 outline - a line drawn outside the element's border
 justify-self - property sets the way a box is justified inside its alignment container along the appropriate axis
+
+position:
+-static - every element is going right after another as it's mentioned in html page
+-relative - same as static, but you can set up element position relatively to his initial position
+-absolute - element is not taking place in the list of other elements, but located according to configured offset relatively to web page
+-fixed - element is not taking place in the list of other elements, but located according to configured offset relatively to browser window
 */
 @font-face {
     font-family: "JetBrains Mono";
@@ -55,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #intro h3 {font-size: 1.83rem !important; line-height: 1.4}
 #contact{margin-top:0}
 .line:before {content: "— ";}
+.scroll {--aspect-ratio: 32/17; --size-title: 15vw}
 
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
@@ -171,4 +178,7 @@ span.wave {
 .content-item:nth-child(even) .content-item-topic {right: auto; left: -7vw}
 /* 'primary' container styles END */
 
+.content-item-img img {
+    width: 100%;
+}
 
