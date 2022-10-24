@@ -62,12 +62,11 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #intro h3 {font-size: 1.83rem !important; line-height: 1.4}
 #contact{margin-top:0}
 .line:before {content: "— ";}
-.scroll {--aspect-ratio: 32/17; --size-title: 15vw}
 
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
-@media only screen and (max-width: 1440px) {
+/*@media only screen and (max-width: 1440px) {
     #intro h1.text-hero {
         font-size: 25vw !important;
     }
@@ -83,7 +82,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #awwwards { display: none; }
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
-    .content-alternate .content-item {margin: 0 auto}
+    .content--alternate .content-item {margin: 0 auto}
     .logo { left: 50px; } .hamburger { right: 50px !important; }
     .pad-mobile { margin-bottom: 20vh !important; }
     .content-item { margin-bottom: 0vh; }
@@ -103,7 +102,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content__item-title { font-size: 36pt !important; padding: 0 1vh !important; }
     .hamburger-box { top: 35px !important; }
     .logo { top: 29px !important; }
-    .content-alternate .content-item {max-width: 100vw}
+    .content--alternate .content-item {max-width: 100vw}
     .pad-mobile { margin-bottom: 10vh !important; }
     .gallery { margin-top: -10em !important; }
     #intro h1.text-hero{font-size:17vw!important;}
@@ -132,7 +131,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .pad-mobile { margin-bottom: 12vh !important; }
     .meta-container { margin: 20px 10px 20px 0 !important; }
     .content-item-img-wrap-portrait { margin-bottom: 1.5em !important; }
-    .content__item--expand .content__item-description, .content__item--expand:nth-child(2n) .content__item-description, .content-item-wide .content__item-description, .content-item-wide:nth-child(2n) .content__item-description { padding: 4em 0 !important; }
+    .content__item--expand .content__item-description, .content__item--expand:nth-child(2n) .content__item-description, .content-item--wide .content__item-description, .content__item--wide:nth-child(2n) .content__item-description { padding: 4em 0 !important; }
     .p-t-about { top: 170px }
     .p-b-card { margin-top: 0 !important; }
     .pad-mobile-md { margin-bottom: 6vh !important; }
@@ -142,7 +141,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 @media only screen and (max-width: 360px) {
     #intro h1.text-hero{font-size:10vw!important;}
-}
+}*/
 
 /* Animation section ------------------------------------------------------------------------------------------------ */
 /*
@@ -169,19 +168,23 @@ span.wave {
 
 /* 'primary' container styles BEGIN */
 #primary {background-color:#000; color:#fff; margin-top:4em; margin-bottom:4em; padding-top:4em; padding-bottom:4em}
+#primary a{color:#fff!important}
+#primary a:hover{text-decoration:none}
 
-.content {margin: 10vh 0 0 0; background-color: #000; outline: 0}
-.content-full {width: 100vw; justify-self: center}
-.content-alternate .content-item {max-width: 90vw}
-.content-alternate .content-item:nth-child(even) {margin-left: auto}
+.content {margin: 10vh 0 0 0; background-color: #000; outline: 0;}
+.content--full {width: 100vw; justify-self: center;}
+.content--alternate .content-item {max-width: 90vw;}
+.content--alternate .content-item:nth-child(even) {margin-left: auto;}
 
-.content-item-topic {opacity: 0.1; font-size: 12vw; position: absolute; top: -7vw; right: -8vw; line-height: 1}
-.content-item:nth-child(even) .content-item-topic {right: auto; left: -7vw}
+.content-item {position: relative; margin-bottom: 20vh; display: grid; grid-template-columns: 50% 50%;}
+.content-item--wide {grid-template-columns: 60% 40%;}
+.content-item--wide:nth-child(even) {grid-template-columns: 40% 60%;}
+
+.content-item-topic {opacity: 0.8 /*TODO change this value later*/; font-size: 12vw; position: absolute; top: -7vw; right: -8vw; line-height: 1}
+.content-item:nth-child(even) .content-item-topic {right: auto; left: -8vw}
 /* 'primary' container styles END */
 
-.content-item {margin-bottom: 20vh; display: grid; grid-template-columns: 50% 50%;}
-.content-item-wide {grid-template-columns: 60% 40%;}
-.content-item-wide:nth-child(even) {grid-template-columns: 40% 60%;}
+
 
 
 .content-item-img img {width: 100%;}
