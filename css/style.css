@@ -171,13 +171,9 @@ span.wave {
 #primary a{color:#fff !important}
 #primary a:hover{text-decoration:none}
 
-.content-item {margin-bottom: 15vh;}
-
-.content-item-topic {opacity: 0.25; font-size: 12vw;  position: relative; top: -3vw; left: -7vw; line-height: 1}
-.content-item-topic:nth-child(even) {right: auto; left: -100vw}
+.content-item {margin-bottom: 5vh;}
+.content-item-topic {opacity: 0.25; font-size: 12vw;  position: relative; top: -3vw; left: -7vw; line-height: 1;}
+.content-item:nth-child(even) .content-item-topic {right: -7vw; left: auto; text-align: right}
 /* 'primary' container styles END */
 
 .content-item-img img {width: 100%;}
-
-
-
