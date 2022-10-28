@@ -4,7 +4,9 @@
 const hero = [];
 hero[0] = "Hola";
 hero[1] = "Hello";
-hero[2] = "Bonjour";
+/*hero[2] = "Namaste";
+hero[3] = "Bonjour";*/
+/* .text-hero font size, if use Namaste & Bonjour, should be 21vw*/
 const myRandom = Math.floor(Math.random() * hero.length);
 document.getElementById("hero").innerHTML = hero[myRandom];
 
