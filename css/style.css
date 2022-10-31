@@ -184,6 +184,7 @@ span.wave {
 
 .content-item-img img {width: 100%; opacity: 0.9}
 
+#header-right {text-align: right;}
 #footer-left img {width: 18%;}
 #footer-left {text-align: left;}
 #footer-center {text-align: center;}
