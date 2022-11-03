@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
     align-items: center
 }
 #intro h1.text-hero {font-size: 450px !important; margin-bottom: -20pt; margin-top: -100pt}
-#intro h3 {font-size: 1.6rem !important; line-height: 1.2}
+#intro h3 {font-size: 1.7rem !important; line-height: 1.2}
 #contact{margin-top:0}
 
 /*
@@ -69,19 +69,19 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #intro h1.text-hero {
         font-size: 400px !important;
     }
-    #contact img {width: 20% !important;}
 }
 
 @media only screen and (max-width: 1280px) {
     #intro h1.text-hero {
-        font-size: 300px !important;
+        font-size: 310px !important;
     }
     .content-item-topic {top: -5vw !important; left: -2vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
-    #contact img {width: 20% !important;}
 }
 
 @media only screen and (max-width: 1024px) {
+    #intro h1.text-hero{font-size: 270px !important; margin-top: -50pt;}
+    #intro h3 {font-size:1.5rem!important}
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
     .content--alternate .content-item {margin: 0 auto}
@@ -90,15 +90,14 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content-item { margin-bottom: 0vh; }
     .content-item-img-wrap-medium { height: 40px !important;}
     .pad-top { top: 170px }
-    #intro h1.text-hero{font-size: 250px !important; margin-top: -50pt;}
-    #intro h3 {font-size:1.75rem!important}
     .content-item-topic {top: -5vw !important; left: -5vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
-    #contact img {width: 20% !important;}
+    #contact img {padding-left: 7px; padding-right: 7px;}
 }
 
 @media only screen and (max-width: 800px) {
     #intro { height: 88vh; }
+    #intro h1.text-hero{font-size: 160px !important;}
     body { font-size: 0.82rem !important; }
     #site-nav { width: 120px !important; top: 83px !important; }
     #site-nav h4 { font-size: 18px; }
@@ -110,21 +109,21 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .content--alternate .content-item {max-width: 100vw}
     .pad-mobile { margin-bottom: 10vh !important; }
     .gallery { margin-top: -10em !important; }
-    #intro h1.text-hero{font-size: 190px !important;}
     .content-item-topic {top: -5vw !important; left: -5vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
     #footer-left {text-align: center !important;}
     #footer-right {text-align: center !important;}
-    #contact img {width: 25% !important;}
+    #contact img {padding-left: 7px; padding-right: 7px;}
 }
 
 @media only screen and (max-width: 480px) {
+    #intro {height: 73vh !important;}
+    #intro h1 {font-size: 2.4rem!important;}
+    #intro h1.text-hero{font-size: 140px !important; margin-bottom:0; margin-top:0;}
     #footer .offset-logo { margin-top:4em;margin-bottom:3.5em!important;} #footer .offset-logo img {width:120px;}
     .pace { width: 200px !important;}
     .hide-mobile { display: none; }
     .logo { left: 30px; } .hamburger { right: 30px !important; }
-    #intro { height: 73vh !important; }
-    #intro h1 { font-size: 2.4rem!important;}
     #contact, #footer { text-align: center !important; }
     #contact { margin-top: -3em !important; }
     #site-nav { top: 100px; position: relative; float: right; width: 150px;  }
@@ -140,19 +139,18 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .p-b-card { margin-top: 0 !important; }
     .pad-mobile-md { margin-bottom: 6vh !important; }
     .download-cv { margin-bottom: 2em; }
-    #intro h1.text-hero{font-size: 120px !important; margin-bottom:0; margin-top:0;}
     .content-item-topic {top: -5vw !important; left: -2vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
     #footer-left {text-align: center !important;}
     #footer-right {text-align: center !important;}
-    #contact img {width: 32% !important; padding-left: 7px; padding-right: 7px;}
+    #contact img {padding-left: 7px; padding-right: 7px;}
 }
 
 @media only screen and (max-width: 360px) {
-    #intro h1.text-hero{font-size: 80px !important;}
+    #intro h1.text-hero{font-size: 100px !important;}
     #footer-left {text-align: center !important;}
     #footer-right {text-align: center !important;}
-    #contact img {width: 32% !important; padding-left: 7px; padding-right: 7px;}
+    #contact img {padding-left: 7px; padding-right: 7px;}
 }
 
 /* Animation section ------------------------------------------------------------------------------------------------ */
@@ -195,12 +193,9 @@ span.wave {
 #footer-center {text-align: center;}
 #footer-right {text-align: right;}
 
-#contact {text-align: center}
+#contact {text-align: left}
 #contact img {
-    width: 12%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #contact a{text-decoration:none;}
-
-
