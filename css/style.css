@@ -60,21 +60,18 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 }
 #intro h1.text-hero {font-size: 450px !important; margin-bottom: -20pt; margin-top: -100pt}
 #intro h3 {font-size: 1.7rem !important; line-height: 1.2}
-#contact{margin-top:0}
+
+#header-label {font-size: 1.2rem; text-align: left; padding-top: 10px; padding-bottom: 10px;}
 
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 */
 @media only screen and (max-width: 1440px) {
-    #intro h1.text-hero {
-        font-size: 400px !important;
-    }
+    #intro h1.text-hero {font-size: 400px !important;}
 }
 
 @media only screen and (max-width: 1280px) {
-    #intro h1.text-hero {
-        font-size: 310px !important;
-    }
+    #intro h1.text-hero {font-size: 310px !important;}
     .content-item-topic {top: -5vw !important; left: -2vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
 }
@@ -82,6 +79,8 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 @media only screen and (max-width: 1024px) {
     #intro h1.text-hero{font-size: 270px !important; margin-top: -50pt;}
     #intro h3 {font-size:1.5rem!important}
+    #contact img {padding-left: 7px;}
+
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
     .content--alternate .content-item {margin: 0 auto}
@@ -92,13 +91,13 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .pad-top { top: 170px }
     .content-item-topic {top: -5vw !important; left: -5vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
-    #contact img {padding-left: 7px; padding-right: 7px;}
 }
 
 @media only screen and (max-width: 800px) {
+    body { font-size: 0.85rem !important; }
     #intro { height: 88vh; }
     #intro h1.text-hero{font-size: 160px !important;}
-    body { font-size: 0.82rem !important; }
+
     #site-nav { width: 120px !important; top: 83px !important; }
     #site-nav h4 { font-size: 18px; }
     h2.small { font-size: 32pt !important; }
@@ -114,43 +113,49 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #footer-left {text-align: center !important;}
     #footer-right {text-align: center !important;}
     #contact img {padding-left: 7px; padding-right: 7px;}
+    #header-label {text-align: left !important;}
 }
 
-@media only screen and (max-width: 480px) {
-    #intro {height: 73vh !important;}
-    #intro h1 {font-size: 2.4rem!important;}
-    #intro h1.text-hero{font-size: 140px !important; margin-bottom:0; margin-top:0;}
-    #footer .offset-logo { margin-top:4em;margin-bottom:3.5em!important;} #footer .offset-logo img {width:120px;}
-    .pace { width: 200px !important;}
-    .hide-mobile { display: none; }
-    .logo { left: 30px; } .hamburger { right: 30px !important; }
-    #contact, #footer { text-align: center !important; }
-    #contact { margin-top: -3em !important; }
-    #site-nav { top: 100px; position: relative; float: right; width: 150px;  }
-    h1.medium { font-size: 38pt; }
-    .grid-main { padding: 0; }
-    .txt-right { text-align:center;}
-    .title-adj { margin: calc(60pt * -1/2) 0 0 0 !important; }
-    ion-icon { font-size: 18px !important; }
-    .p-t-xs { padding-top: 1em; } .p-t-md { padding-top: 3em; }
-    .pad-mobile { margin-bottom: 12vh !important; }
-    .meta-container { margin: 20px 10px 20px 0 !important; }
-    .p-t-about { top: 170px }
-    .p-b-card { margin-top: 0 !important; }
-    .pad-mobile-md { margin-bottom: 6vh !important; }
-    .download-cv { margin-bottom: 2em; }
-    .content-item-topic {top: -5vw !important; left: -2vw !important;}
-    .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
-    #footer-left {text-align: center !important;}
-    #footer-right {text-align: center !important;}
-    #contact img {padding-left: 7px; padding-right: 7px;}
-}
+/*@media only screen and (max-width: 480px) {*/
+/*    #intro {height: 73vh !important;}*/
+/*    #intro h1 {font-size: 2.4rem!important;}*/
+/*    #intro h1.text-hero{font-size: 140px !important; margin-bottom:0; margin-top:0;}*/
+/*    #header-label {text-align: center !important; padding-bottom: 20px !important; padding-top: 0 !important;}*/
+/*    #contact {text-align: center !important;}*/
+/*    #contact img {padding-left: 5px; padding-top: 5px;}*/
 
-@media only screen and (max-width: 360px) {
+/*    #footer .offset-logo { margin-top:4em;margin-bottom:3.5em!important;} #footer .offset-logo img {width:120px;}*/
+/*    .pace { width: 200px !important;}*/
+/*    .hide-mobile { display: none; }*/
+/*    .logo { left: 30px; } .hamburger { right: 30px !important; }*/
+/*    #contact, #footer { text-align: center !important; }*/
+/*    #contact { margin-top: -3em !important; }*/
+/*    #site-nav { top: 100px; position: relative; float: right; width: 150px;  }*/
+/*    h1.medium { font-size: 38pt; }*/
+/*    .grid-main { padding: 0; }*/
+/*    .txt-right { text-align:center;}*/
+/*    .title-adj { margin: calc(60pt * -1/2) 0 0 0 !important; }*/
+/*    ion-icon { font-size: 18px !important; }*/
+/*    .p-t-xs { padding-top: 1em; } .p-t-md { padding-top: 3em; }*/
+/*    .pad-mobile { margin-bottom: 12vh !important; }*/
+/*    .meta-container { margin: 20px 10px 20px 0 !important; }*/
+/*    .p-t-about { top: 170px }*/
+/*    .p-b-card { margin-top: 0 !important; }*/
+/*    .pad-mobile-md { margin-bottom: 6vh !important; }*/
+/*    .download-cv { margin-bottom: 2em; }*/
+/*    .content-item-topic {top: -5vw !important; left: -2vw !important;}*/
+/*    .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}*/
+/*    #footer-left {text-align: center !important;}*/
+/*    #footer-right {text-align: center !important;}*/
+/*}*/
+
+@media only screen and (max-width: 600px) {
     #intro h1.text-hero{font-size: 100px !important;}
     #footer-left {text-align: center !important;}
     #footer-right {text-align: center !important;}
-    #contact img {padding-left: 7px; padding-right: 7px;}
+    #contact {text-align: center !important;}
+    #contact img {padding-left: 5px; padding-top: 5px;}
+    #header-label {text-align: center !important; padding-bottom: 20px !important; padding-top: 0 !important;}
 }
 
 /* Animation section ------------------------------------------------------------------------------------------------ */
@@ -187,15 +192,13 @@ span.wave {
 
 .content-item-img img {width: 100%; opacity: 0.9}
 
-#header-right {text-align: right;}
 #footer-left img {width: 18%;}
 #footer-left {text-align: left;}
 #footer-center {text-align: center;}
 #footer-right {text-align: right;}
 
-#contact {text-align: left}
-#contact img {
-    padding-left: 20px;
-    padding-right: 20px;
-}
+#contact {text-align: right}
+#contact img {padding-left: 10px; padding-top: 10px; padding-bottom: 10px;}
 #contact a{text-decoration:none;}
+
+.content-item-img img {border-radius: 3%;}
