@@ -14,7 +14,8 @@ overflow - property specifies what should happen if content overflows an element
 
 position:
 -static - element is positioned according to the normal flow of the document
--relative - element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left
+-relative - element is positioned according to the normal flow of the document, and then offset relative to itself
+based on the values of top, right, bottom, and left
 -absolute - element is not taking place in the list of other elements, but located according to configured offset relatively to web page
 -fixed - element is not taking place in the list of other elements, but located according to configured offset relatively to browser window
 */
@@ -62,6 +63,14 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #intro h3 {font-size: 1.7rem !important; line-height: 1.2}
 
 #header-label {font-size: 1.2rem; text-align: left; padding-top: 10px; padding-bottom: 10px;}
+#header-contact {text-align: right;}
+
+#footer-contact {text-align: left;}
+#footer-label {text-align: center; padding-top: 5px;}
+#rights-reserved {text-align: right; padding-top: 10px;}
+
+.contact img {padding-left: 10px; padding-top: 10px; padding-bottom: 10px; width: 60px;}
+.contact a{text-decoration:none;}
 
 /*
 Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
@@ -79,7 +88,7 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 @media only screen and (max-width: 1024px) {
     #intro h1.text-hero{font-size: 270px !important; margin-top: -50pt;}
     #intro h3 {font-size:1.5rem!important}
-    #contact img {padding-left: 7px;}
+    #contact img {padding-left: 8px;}
 
     .hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
     h1.large { font-size: 52pt; }
@@ -97,6 +106,10 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     body { font-size: 0.85rem !important; }
     #intro { height: 88vh; }
     #intro h1.text-hero{font-size: 160px !important;}
+    #footer-contact {text-align: center !important;}
+    #rights-reserved {text-align: center !important;}
+    #contact img {padding-left: 5px; padding-right: 5px;}
+    #header-label {text-align: left !important;}
 
     #site-nav { width: 120px !important; top: 83px !important; }
     #site-nav h4 { font-size: 18px; }
@@ -110,10 +123,6 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     .gallery { margin-top: -10em !important; }
     .content-item-topic {top: -5vw !important; left: -5vw !important;}
     .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}
-    #footer-left {text-align: center !important;}
-    #footer-right {text-align: center !important;}
-    #contact img {padding-left: 7px; padding-right: 7px;}
-    #header-label {text-align: left !important;}
 }
 
 /*@media only screen and (max-width: 480px) {*/
@@ -151,11 +160,10 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 @media only screen and (max-width: 600px) {
     #intro h1.text-hero{font-size: 100px !important;}
-    #footer-left {text-align: center !important;}
-    #footer-right {text-align: center !important;}
-    #contact {text-align: center !important;}
-    #contact img {padding-left: 5px; padding-top: 5px;}
-    #header-label {text-align: center !important; padding-bottom: 20px !important; padding-top: 0 !important;}
+    #rights-reserved {text-align: center !important;}
+    .contact {text-align: center !important; padding-bottom: 5px;}
+    #contact img {padding-left: 5px;}
+    #header-label {text-align: center !important; padding-bottom: 0 !important; padding-top: 0 !important;}
 }
 
 /* Animation section ------------------------------------------------------------------------------------------------ */
@@ -188,17 +196,5 @@ span.wave {
 .content-item {margin-bottom: 5vh;}
 .content-item-topic {opacity: 0.3; font-size: 10vw;  position: relative; top: -3vw; left: -5vw; line-height: 1;}
 .content-item:nth-child(even) .content-item-topic {top: -3vw; right: -5vw; left: auto; text-align: right}
+.content-item-img img {width: 100%; opacity: 0.9; border-radius: 3%;}
 /* 'primary' container styles END */
-
-.content-item-img img {width: 100%; opacity: 0.9}
-
-#footer-left img {width: 18%;}
-#footer-left {text-align: left;}
-#footer-center {text-align: center;}
-#footer-right {text-align: right;}
-
-#contact {text-align: right}
-#contact img {padding-left: 10px; padding-top: 10px; padding-bottom: 10px;}
-#contact a{text-decoration:none;}
-
-.content-item-img img {border-radius: 3%;}
