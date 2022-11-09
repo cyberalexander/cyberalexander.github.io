@@ -63,9 +63,11 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
     align-items: center
 }
 #intro h1.text-hero {font-size: 450px !important; margin-bottom: -20pt; margin-top: -100pt}
-#intro h3 {font-size: 1.7rem !important; line-height: 1.2}
+#intro h3 {font-size: 1.85rem !important; line-height: 1.2}
 
 #header-label {font-size: 1.2rem; text-align: left; padding-top: 10px; padding-bottom: 10px;}
+#header-label a {color: black; text-decoration: none;}
+#footer-label a {color: black; text-decoration: none;}
 #header-contact {text-align: right;}
 
 #footer-contact {text-align: left;}
