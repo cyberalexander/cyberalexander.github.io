@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 .content-item {margin-bottom: 5vh;}
 .content-item-topic {padding: 0; opacity: 0.15; font-size: 12vw;  position: relative; top: -4vw; left: -2vw; line-height: 1;}
 .content-item:nth-child(even) .content-item-topic {top: -4vw; right: -2vw; left: auto; text-align: right}
-.content-item-img img {width: 100%; opacity: 0.85; border-radius: 2.5%;}
+.content-item-img img {width: 100%; opacity: 1; border-radius: 0.7%;}
 /* 'primary' container styles END */
 
 /*
