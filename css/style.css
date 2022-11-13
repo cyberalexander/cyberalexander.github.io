@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
     align-items: center
 }
 #intro h1.text-hero {font-size: 450px !important; margin-bottom: -20pt; margin-top: -100pt}
-#intro h3 {font-size: 1.85rem !important; line-height: 1.2}
+#intro h3 {font-size: 1.85rem !important; line-height: 1}
 
 #header-label {font-size: 1.2rem; text-align: left; padding-top: 10px; padding-bottom: 10px;}
 #header-label a {color: black; text-decoration: none;}
@@ -83,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #primary a:hover{text-decoration:none}
 
 .content-item {margin-bottom: 5vh;}
-.content-item-topic {padding: 0; opacity: 0.15; font-size: 12vw;  position: relative; top: -4vw; left: -2vw; line-height: 1;}
-.content-item:nth-child(even) .content-item-topic {top: -4vw; right: -2vw; left: auto; text-align: right}
+.content-item-topic {padding: 0; opacity: 0.15; font-size: 10vw;  position: relative; /*top: -4vw; left: -2vw;*/ line-height: 1;}
+.content-item:nth-child(even) .content-item-topic {/*top: -4vw; right: -2vw; left: auto;*/ text-align: right}
 .content-item-img img {width: 100%; opacity: 1; border-radius: 0.7%;}
 /* 'primary' container styles END */
 
@@ -105,16 +105,10 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #intro h3 {font-size:1.5rem!important}
     #contact img {padding-left: 8px;}
     .content-item {margin-bottom: 0;}
+    /*
     .content-item-topic {top: -2vw !important; left: 0 !important;}
     .content-item:nth-child(even) .content-item-topic {top: 0 !important; right: 0 !important;}
-
-    /*.hover-container { position: absolute; left: 0%;  top: 0%; right: 0%; bottom: 0%; height: 80%; }
-    h1.large { font-size: 52pt; }
-    .content--alternate .content-item {margin: 0 auto}
-    .logo { left: 50px; } .hamburger { right: 50px !important; }
-    .pad-mobile { margin-bottom: 20vh !important; }
-    .content-item-img-wrap-medium { height: 40px !important;}
-    .pad-top { top: 170px }*/
+    */
 }
 
 @media only screen and (max-width: 800px) {
@@ -125,53 +119,11 @@ Breakpoints - https://www.w3schools.com/css/css_rwd_mediaqueries.asp
     #rights-reserved {text-align: center !important;}
     #contact img {padding-left: 5px; padding-right: 5px;}
     #header-label {text-align: left !important;}
+    /*
     .content-item-topic {top: -3vw !important; left: 0 !important;}
     .content-item:nth-child(even) .content-item-topic {top: -2vw !important; right: -2vw !important;}
-
-    /*#site-nav { width: 120px !important; top: 83px !important; }
-    #site-nav h4 { font-size: 18px; }
-    h2.small { font-size: 32pt !important; }
-    span.meta { padding: 0.5em !important; }
-    .content__item-title { font-size: 36pt !important; padding: 0 1vh !important; }
-    .hamburger-box { top: 35px !important; }
-    .logo { top: 29px !important; }
-    .content--alternate .content-item {max-width: 100vw}
-    .pad-mobile { margin-bottom: 10vh !important; }
-    .gallery { margin-top: -10em !important; }*/
+    */
 }
-
-/*@media only screen and (max-width: 480px) {*/
-/*    #intro {height: 73vh !important;}*/
-/*    #intro h1 {font-size: 2.4rem!important;}*/
-/*    #intro h1.text-hero{font-size: 140px !important; margin-bottom:0; margin-top:0;}*/
-/*    #header-label {text-align: center !important; padding-bottom: 20px !important; padding-top: 0 !important;}*/
-/*    #contact {text-align: center !important;}*/
-/*    #contact img {padding-left: 5px; padding-top: 5px;}*/
-
-/*    #footer .offset-logo { margin-top:4em;margin-bottom:3.5em!important;} #footer .offset-logo img {width:120px;}*/
-/*    .pace { width: 200px !important;}*/
-/*    .hide-mobile { display: none; }*/
-/*    .logo { left: 30px; } .hamburger { right: 30px !important; }*/
-/*    #contact, #footer { text-align: center !important; }*/
-/*    #contact { margin-top: -3em !important; }*/
-/*    #site-nav { top: 100px; position: relative; float: right; width: 150px;  }*/
-/*    h1.medium { font-size: 38pt; }*/
-/*    .grid-main { padding: 0; }*/
-/*    .txt-right { text-align:center;}*/
-/*    .title-adj { margin: calc(60pt * -1/2) 0 0 0 !important; }*/
-/*    ion-icon { font-size: 18px !important; }*/
-/*    .p-t-xs { padding-top: 1em; } .p-t-md { padding-top: 3em; }*/
-/*    .pad-mobile { margin-bottom: 12vh !important; }*/
-/*    .meta-container { margin: 20px 10px 20px 0 !important; }*/
-/*    .p-t-about { top: 170px }*/
-/*    .p-b-card { margin-top: 0 !important; }*/
-/*    .pad-mobile-md { margin-bottom: 6vh !important; }*/
-/*    .download-cv { margin-bottom: 2em; }*/
-/*    .content-item-topic {top: -5vw !important; left: -2vw !important;}*/
-/*    .content-item:nth-child(even) .content-item-topic {top: -5vw !important; right: -5vw !important;}*/
-/*    #footer-left {text-align: center !important;}*/
-/*    #footer-right {text-align: center !important;}*/
-/*}*/
 
 @media only screen and (max-width: 600px) {
     #intro h1.text-hero{font-size: 130px !important;}
