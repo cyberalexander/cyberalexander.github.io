@@ -98,9 +98,11 @@ h1, h2, h3, h4, h5, h6 {font-family: "JetBrains Mono", sans-serif !important;}
 #primary a:hover{text-decoration:none}
 
 .content-item {margin-bottom: 5vh;}
-.content-item-topic {padding: 0; opacity: 0.15; font-size: 10vw;  position: relative; /*top: -4vw; left: -2vw;*/ line-height: 1;}
+.content-item-topic {z-index: 0; padding: 0; opacity: 0.15; font-size: 10vw;  position: relative; /*top: -4vw; left: -2vw;*/ line-height: 1;}
 .content-item:nth-child(even) .content-item-topic {/*top: -4vw; right: -2vw; left: auto;*/ text-align: right}
 .content-item-img img {width: 100%; opacity: 1; border-radius: 0.7%;}
+.content-item-description {z-index: 10;}
+.content-item-description > ul > li {margin-top: 15px; margin-bottom: 15px;}
 /* 'primary' container styles END */
 
 /*
